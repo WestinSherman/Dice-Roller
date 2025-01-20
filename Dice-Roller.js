@@ -21,7 +21,7 @@ rl.question("Number of faces on dice: ", (answerSize) => {
                     dice.push(Math.floor(Math.random() * size + 1));
                 }
                 const sum = dice.reduce(function (a, b) { return a + b; }, 0);
-                console.log("you rolled ", dice, " for a total of: ", (parseInt(sum)));
+                console.log(`You rolled ${dice} for a total of:`, (parseInt(sum)));
                 rl.close();
 
             })
